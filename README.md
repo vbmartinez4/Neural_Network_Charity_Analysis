@@ -50,9 +50,15 @@ The EIN and NAME variables are considered neither targets nor features and are t
 
 ### Compiling, Training, and Evaluating the Model
 **How many neurons, layers, and activation functions did you select for your neural network model, and why?**
+
+![define model](Images/define_model.png)
+
 When it came time to compile and train the model, for the first initial approach, two hidden layers were established. In the first hidden layer, it contained 80 neurons, while the second layer held 30 neurons. In terms of the activation functions selected for the model, both hidden layers utilized the ‘relu’ function while the output later utilized sigmoid. These features were selected as it was believed that it could allow us to achieve a high performance of the model.
 
 **Were you able to achieve the target model performance?**
+
+![first model accuracy](Images/first_model_accuracy.png)
+
 Ultimately, the model ended up producing an accuracy of 72.66%, which did not achieve the target of obtaining an accuracy of 75% or higher.
 
 **What steps did you take to try and increase model performance?**
@@ -65,6 +71,8 @@ Apart from these updates, an additional column, ‘STATUS’ was dropped from th
 
 ## Summary
 Despite our three attempts at optimizing the model, accuracy of 75% was not achieve. The highest accuracy performance provided results of 72.54%. Utilizing different features from the original model produced gave greater insight on the smallest optimizations have a big impact on the accuracy produced via the model.
+
+![first optimized model](Images/optimized1_model_accuracy.png)
 
 Another model worth exploring that would solve the classification problem is the random forest model type. The random forest has many positive associations as it is considered one of the most powerful model types as they are easy to interpret and can handle outliers and nonlinear data. Also, our data does not contain images or natural language data, which makes using random forest another strong contender. It might allow us to reach the accuracy of 75%, it is worth exploring to create this model and comparing it against the deep learning models we have already established. 
 
